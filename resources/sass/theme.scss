@@ -1,17 +1,21 @@
 // Nova Tool CSS
 
-.form-input {
+.form-control, .form-input {
     border-color: hsla(0, 0%, 95%, 1) !important;
 
-    &:focus {
-        border-color: hsla(54, 100%, 57%, 1) !important;
-        background: hsla(54, 100%, 62%, 1) !important;
-        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .05) !important;
+    .search-input-input, .tags-input-text {
+        background: transparent;
     }
 }
 
+.form-control-focus, .form-input:active, .form-input:focus, .form-input:focus-within {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .05) !important;
+    background: hsla(54, 100%, 62%, 1) !important;
+    border-color: hsla(54, 100%, 57%, 1) !important;
+}
+
 * {
-    &:focus {
+    &:focus, &:active, &:focus-within {
         outline: none !important;
     }
 }
